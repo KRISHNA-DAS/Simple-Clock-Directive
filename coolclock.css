@@ -4,7 +4,7 @@
     height: 100px;
     position: relative;
     width: 100px;
-	background-image: url('clock.png');
+    background-image: url('clock.png');
     background-size:100%;
 }
 .clock {
