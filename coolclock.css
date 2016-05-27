@@ -1,0 +1,34 @@
+.dial {
+    background: azure none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+.clock {
+    bottom: 2px;
+    left: 2px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.clock::before {
+    border-left: 4px solid brown;
+    bottom: 50%;
+    content: "";
+    left: 50%;
+    margin-left: -2px;
+    position: absolute;
+    width: 0;
+}
+.clock.hour::before {
+    height: 33%;
+}
+.clock.min::before {
+    border-color: mediumaquamarine;
+    height: 40%;
+}
+.clock.sec::before {
+    border-color: lightgray;
+    height: 50%;
+}
